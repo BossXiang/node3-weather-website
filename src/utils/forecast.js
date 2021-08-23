@@ -12,7 +12,7 @@ const forecast = (latitude, longitude, callback) => {
         } else {
             callback(undefined, {
                 forecastData: 'The weather is ' + body.current.weather_descriptions[0] +'.  Temperature: ' + body.current.temperature + 
-                '.  Humidity: ' + body.current.humidityl + '.  Visibility: ' + body.current.visibility
+                '.  Humidity: ' + body.current.humidity + '.  Visibility: ' + body.current.visibility
             })
         }
     })
